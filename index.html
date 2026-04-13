@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afolake Medicine Store & Supermarket</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet — make sure afolake.css is in the same folder -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================================
+     NAVBAR
+================================ -->
+<header class="navbar">
+    <div class="container navbar-inner">
+        <a href="#" class="navbar-logo">
+            <span class="logo-name">Afolake</span>
+            <span class="logo-sub">Medicine Store Enterprises</span>
+        </a>
+        <nav class="navbar-links">
+            <a href="#categories">Home</a>
+            <a href="products.html">Products</a>
+            <a href="#about">About</a>
+        </nav>
+        <a href="https://wa.me/2348076172767?text=Hi%20Afolake%20Enterprises%2C%20I%20want%20to%20place%20an%20order" class="btn-primary" target="_blank">
+            Order on WhatsApp
+        </a>
+        <button class="burger" id="burger">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#categories">Home</a>
+        <a href="products.html">Products</a>
+        <a href="#about">About</a>
+        <a href="https://wa.me/2348076172767?text=Hi%20Afolake%20Enterprises%2C%20I%20want%20to%20place%20an%20order" class="btn-primary" style="width:fit-content;" target="_blank">Order on WhatsApp</a>
+    </div>
+</header>
+
+
+<!-- ================================
+     HERO
+     ------------------------------------------------
+     IMAGE TO REPLACE:
+     Open afolake.css and find .hero-bg
+     Change 'hero-bg.jpg' to your image file name
+     ------------------------------------------------
+================================ -->
+<section class="hero">
+    <div class="hero-bg"></div>
+    <div class="container">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Quality Care,<br/>
+                <span>Right in Your<br/>Neighborhood.</span>
+            </h1>
+            <p class="hero-sub">
+                Genuine medicines, fresh groceries, and household essentials —
+                all in one place. Order on WhatsApp or visit us today.
+            </p>
+            <div class="hero-actions">
+                <a href="https://wa.me/2348076172767?text=Hi%20Afolake%20Enterprises%2C%20I%20want%20to%20place%20an%20order" class="btn-primary" target="_blank">
+                    Order via WhatsApp
+                </a>
+                <a href="#about" class="btn-ghost">Visit Store</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ================================
+     MARQUEE STRIP
+================================ -->
+<div class="marquee-strip">
+    <div class="marquee-track">
+        <span class="marquee-item"><span class="marquee-dot"></span>NAFDAC Approved</span>
+        <span class="marquee-item"><span class="marquee-dot"></span>Delivery Available</span>
+        <span class="marquee-item"><span class="marquee-dot"></span>Affordable Prices</span>
+        <span class="marquee-item"><span class="marquee-dot"></span>Bulk Orders Welcome</span>
+        <span class="marquee-item"><span class="marquee-dot"></span>Fast WhatsApp Orders</span>
+        <!-- duplicate for seamless loop -->
+        <span class="marquee-item"><span class="marquee-dot"></span>NAFDAC Approved</span>
+        <span class="marquee-item"><span class="marquee-dot"></span>Delivery Available</span>
+        <span class="marquee-item"><span class="marquee-dot"></span>Affordable Prices</span>
+        <span class="marquee-item"><span class="marquee-dot"></span>Bulk Orders Welcome</span>
+        <span class="marquee-item"><span class="marquee-dot"></span>Fast WhatsApp Orders</span>
+    </div>
+</div>
+
+
+<!-- ================================
+     CATEGORIES
+     ------------------------------------------------
+     IMAGES TO REPLACE:
+     Each .cat-bg has a style="background-image:url('...')"
+     Replace each URL with your actual image file name
+     e.g. url('medicine.jpg') or url('drinks.jpg')
+     ------------------------------------------------
+================================ -->
+<section class="categories" id="categories">
+    <div class="container">
+        <div class="categories-header reveal">
+            <h2 class="section-heading">Everything You Need</h2>
+            <div class="underline-accent"></div>
+        </div>
+
+        <div class="categories-grid">
+
+            <!-- Medicine & Pharmacy — large card (left side) -->
+            <div class="cat-card reveal">
+                <!-- REPLACE: change 'medicine.jpg' to your medicine category image -->
+                <div class="cat-bg" style="background-image:url('medicine.jpg');"></div>
+                <div class="cat-overlay"></div>
+                <div class="cat-content">
+                    <div class="cat-label">Primary Care</div>
+                    <div class="cat-title">Medicine & Pharmacy</div>
+                    <div class="cat-desc">Expertly curated prescriptions and over-the-counter essentials.</div>
+                    <a href="products.html" class="cat-link">Shop Pharmacy →</a>
+                </div>
+            </div>
+
+            <!-- Drinks & Wines -->
+            <div class="cat-card reveal d1">
+                <!-- REPLACE: change 'drinks.jpg' to your drinks image -->
+                <div class="cat-bg" style="background-image:url('drinks.jpg');"></div>
+                <div class="cat-overlay"></div>
+                <div class="cat-content"><div class="cat-title-sm">Drinks & Wines</div></div>
+            </div>
+
+            <!-- Personal Care -->
+            <div class="cat-card reveal d2">
+                <!-- REPLACE: change 'personal-care.jpg' to your personal care image -->
+                <div class="cat-bg" style="background-image:url('personal-care.jpg');"></div>
+                <div class="cat-overlay"></div>
+                <div class="cat-content"><div class="cat-title-sm">Personal Care</div></div>
+            </div>
+
+            <!-- Beverages -->
+            <div class="cat-card reveal d1">
+                <!-- REPLACE: change 'beverages.jpg' to your beverages image -->
+                <div class="cat-bg" style="background-image:url('beverages.jpg');"></div>
+                <div class="cat-overlay"></div>
+                <div class="cat-content"><div class="cat-title-sm">Beverages</div></div>
+            </div>
+
+            <!-- Household -->
+            <div class="cat-card reveal d2">
+                <!-- REPLACE: change 'household.jpg' to your household image -->
+                <div class="cat-bg" style="background-image:url('household.jpg');"></div>
+                <div class="cat-overlay"></div>
+                <div class="cat-content"><div class="cat-title-sm">Household</div></div>
+            </div>
+
+        </div>
+
+      
+    </div>
+</section>
+
+
+<!-- ================================
+     HOT DEALS
+     ------------------------------------------------
+     IMAGES TO REPLACE:
+     Each deal card has an <img> tag
+     Replace src="..." with your actual product image
+     e.g. src="jug.jpg" or src="grinder.jpg"
+     ------------------------------------------------
+================================ -->
+<section class="hot-deals" id="products">
+    <div class="container">
+        <div class="deals-header reveal">
+            <div>
+                <p class="section-label">Weekly Savings</p>
+                <h2 class="section-heading">Hot Deals</h2>
+                <p class="section-sub">Everyday items at great prices</p>
+            </div>
+            
+        </div>
+
+        <div class="deals-grid">
+
+            <!-- Deal 1 -->
+            <div class="deal-card reveal">
+                <div class="deal-img">
+                    <!-- REPLACE: src="jug.jpg" with your product image -->
+                    <img src="jug.jpg" alt="Jug with cup">
+                    <span class="deal-badge">Hot Deal</span>
+                    <a href="https://wa.me/2348076172767?text=Hi%20Afolake%20Enterprises%2C%20I%20want%20to%20get%20the%20Jug%20with%20Cup%20Set" class="deal-cart" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M5.077 20.556l-.264-1.39a14.9 14.9 0 01-1.969-7.463C2.844 4.916 7.76 0 13.813 0c2.943 0 5.707 1.147 7.787 3.229a10.934 10.934 0 013.22 7.786c-.003 6.054-4.921 10.971-10.972 10.971a10.963 10.963 0 01-5.233-1.327l-3.538.897zm3.832-2.215l.333.198a9.108 9.108 0 004.57 1.225c5.024 0 9.11-4.085 9.112-9.112a9.09 9.09 0 00-2.674-6.465 9.087 9.087 0 00-6.441-2.669c-5.028 0-9.114 4.085-9.116 9.11a9.124 9.124 0 001.39 4.859l.215.343-.914 3.337 3.525-.826z" fill-rule="evenodd"/></svg>
+                    </a>
+                </div>
+                <div class="deal-info">
+                    <div class="deal-name">Jug with Cup Set</div>
+                    <div><span class="deal-price">₦4,500</span><span class="deal-old-price">₦6,000</span></div>
+                </div>
+            </div>
+
+            <!-- Deal 2 -->
+            <div class="deal-card reveal d1">
+                <div class="deal-img">
+                    <!-- REPLACE: src="grinder.jpg" with your product image -->
+                    <img src="grinder.jpg" alt="Corn Grinder">
+                    <span class="deal-badge">Hot Deal</span>
+                    <a href="https://wa.me/2348076172767?text=Hi%20Afolake%20Enterprises%2C%20I%20want%20to%20get%20the%20Corn%20Grinder" class="deal-cart" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M5.077 20.556l-.264-1.39a14.9 14.9 0 01-1.969-7.463C2.844 4.916 7.76 0 13.813 0c2.943 0 5.707 1.147 7.787 3.229a10.934 10.934 0 013.22 7.786c-.003 6.054-4.921 10.971-10.972 10.971a10.963 10.963 0 01-5.233-1.327l-3.538.897zm3.832-2.215l.333.198a9.108 9.108 0 004.57 1.225c5.024 0 9.11-4.085 9.112-9.112a9.09 9.09 0 00-2.674-6.465 9.087 9.087 0 00-6.441-2.669c-5.028 0-9.114 4.085-9.116 9.11a9.124 9.124 0 001.39 4.859l.215.343-.914 3.337 3.525-.826z" fill-rule="evenodd"/></svg>
+                    </a>
+                </div>
+                <div class="deal-info">
+                    <div class="deal-name">Corn Grinder</div>
+                    <div><span class="deal-price">₦10,000</span><span class="deal-old-price">₦15,000</span></div>
+                </div>
+            </div>
+
+            <!-- Deal 3 -->
+            <div class="deal-card reveal d2">
+                <div class="deal-img">
+                    <!-- REPLACE: src="flask.jpg" with your product image -->
+                    <img src="flask.jpg" alt="Vacuum Food Flask">
+                    <span class="deal-badge">Hot Deal</span>
+                    <a href="https://wa.me/2348076172767?text=Hi%20Afolake%20Enterprises%2C%20I%20want%20to%20get%20the%20Vacuum%20Food%20Flask" class="deal-cart" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M5.077 20.556l-.264-1.39a14.9 14.9 0 01-1.969-7.463C2.844 4.916 7.76 0 13.813 0c2.943 0 5.707 1.147 7.787 3.229a10.934 10.934 0 013.22 7.786c-.003 6.054-4.921 10.971-10.972 10.971a10.963 10.963 0 01-5.233-1.327l-3.538.897zm3.832-2.215l.333.198a9.108 9.108 0 004.57 1.225c5.024 0 9.11-4.085 9.112-9.112a9.09 9.09 0 00-2.674-6.465 9.087 9.087 0 00-6.441-2.669c-5.028 0-9.114 4.085-9.116 9.11a9.124 9.124 0 001.39 4.859l.215.343-.914 3.337 3.525-.826z" fill-rule="evenodd"/></svg>
+                    </a>
+                </div>
+                <div class="deal-info">
+                    <div class="deal-name">Vacuum Food Flask</div>
+                    <div><span class="deal-price">₦1,850</span><span class="deal-old-price">₦3,000</span></div>
+                </div>
+            </div>
+
+            <!-- Deal 4 -->
+            <div class="deal-card reveal d3">
+                <div class="deal-img">
+                    <!-- REPLACE: src="plates.jpg" with your product image -->
+                    <img src="plates.jpg" alt="Plate and cups set">
+                    <span class="deal-badge">Hot Deal</span>
+                    <a href="https://wa.me/2348076172767?text=Hi%20Afolake%20Enterprises%2C%20I%20want%20to%20get%20the%20Plate%20and%20Cups%20Set" class="deal-cart" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M5.077 20.556l-.264-1.39a14.9 14.9 0 01-1.969-7.463C2.844 4.916 7.76 0 13.813 0c2.943 0 5.707 1.147 7.787 3.229a10.934 10.934 0 013.22 7.786c-.003 6.054-4.921 10.971-10.972 10.971a10.963 10.963 0 01-5.233-1.327l-3.538.897zm3.832-2.215l.333.198a9.108 9.108 0 004.57 1.225c5.024 0 9.11-4.085 9.112-9.112a9.09 9.09 0 00-2.674-6.465 9.087 9.087 0 00-6.441-2.669c-5.028 0-9.114 4.085-9.116 9.11a9.124 9.124 0 001.39 4.859l.215.343-.914 3.337 3.525-.826z" fill-rule="evenodd"/></svg>
+                    </a>
+                </div>
+                <div class="deal-info">
+                    <div class="deal-name">Plate and cups set</div>
+                    <div><span class="deal-price">₦36,000</span><span class="deal-old-price">₦45,000</span></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ================================
+     WHY TRUST US
+================================ -->
+<section class="trust" id="about">
+    <div class="container">
+        <div style="text-align:center;" class="reveal">
+            <h2 class="section-heading">Why Customers Trust Us</h2>
+            <div class="underline-accent" style="margin:0 auto;"></div>
+        </div>
+        <div class="trust-grid">
+            <div class="trust-card reveal">
+                <div class="trust-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
+                </div>
+                <div class="trust-title">Trusted Products</div>
+                <div class="trust-desc">We stock genuine and NAFDAC-approved products you can rely on for your family's health and safety.</div>
+            </div>
+            <div class="trust-card reveal d1">
+                <div class="trust-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg>
+                </div>
+                <div class="trust-title">Fast & Easy Service</div>
+                <div class="trust-desc">From in-store shopping to WhatsApp orders, we make everything quick and stress-free for you.</div>
+            </div>
+            <div class="trust-card reveal d2">
+                <div class="trust-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z"/></svg>
+                </div>
+                <div class="trust-title">Friendly Support</div>
+                <div class="trust-desc">Our team is always ready to assist you and make your shopping experience easy and enjoyable.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ================================
+     HOW TO ORDER
+================================ -->
+<section class="how-to-order">
+    <div class="container">
+        <div class="how-header reveal">
+            <h2 class="section-heading">Order on WhatsApp in 3 Easy Steps</h2>
+            <p class="section-sub">Simple, fast, and secure. Skip the aisle, start a chat.</p>
+        </div>
+        <div class="steps-grid">
+            <div class="step-item reveal">
+                <div class="step-num">1</div>
+                <div class="step-title">Send Your List</div>
+                <div class="step-desc">Message us on WhatsApp with the items you need and we'll get right to it.</div>
+            </div>
+            <div class="step-item reveal d1">
+                <div class="step-num">2</div>
+                <div class="step-title">Confirm Order</div>
+                <div class="step-desc">We'll confirm availability and total price with you before processing.</div>
+            </div>
+            <div class="step-item reveal d2">
+                <div class="step-num">3</div>
+                <div class="step-title">Pickup / Delivery</div>
+                <div class="step-desc">Choose to pick up your order or have it delivered right to your door.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ================================
+     AFOLAKE PLUS
+     ------------------------------------------------
+     IMAGE TO REPLACE:
+     Change src="store-photo.jpg" to your actual
+     store or team photo file name
+     ------------------------------------------------
+================================ -->
+<section class="afolake-plus">
+    <div class="container plus-inner">
+        <div class="plus-img reveal">
+            <!-- REPLACE: src="store-photo.jpg" with your store photo -->
+            <img src="store-photo.jpg" alt="Afolake store">
+        </div>
+        <div class="plus-content reveal d1">
+            <p class="section-label">Afolake Plus</p>
+            <h2 class="plus-title">Shop More,<br/>Save More</h2>
+            <p class="plus-desc">
+                Join our reward program to get exclusive discounts on medicine,
+                priority prescription refills, and surprise birthday bonuses.
+                It's our way of saying thank you for trusting us with your family's health.
+            </p>
+            <a href="https://wa.me/2348076172767?text=Hi%20Afolake%2C%20I%20want%20to%20join%20the%20Afolake%20Plus%20reward%20program" class="btn-primary" target="_blank">
+                Join Afolake Plus →
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<!-- ================================
+     TESTIMONIALS
+     ------------------------------------------------
+     CUSTOMER PHOTOS:
+     Replace the emoji inside .author-avatar
+     with an <img> tag like this:
+     <img src="customer-1.jpg" alt="Mrs. Adeyemi">
+     ------------------------------------------------
+================================ -->
+<section class="testimonials">
+    <div class="container">
+        <div class="testimonials-header reveal">
+            <h2 class="section-heading">What Our Customers Say</h2>
+            <div class="underline-accent" style="margin:0 auto;"></div>
+        </div>
+        <div class="testimonials-grid">
+
+            <div class="testimonial-card reveal">
+                <div class="quote-mark">"</div>
+                <div class="stars">
+                    <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <p class="testimonial-text">
+                    I've been buying from Afolake for a while now. Their prices are fair
+                    and I always find what I need. Very reliable store.
+                </p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">
+                         <img src="customer-1.jpg" alt="Mrs. Adeyemi"> 
+                    </div>
+                    <div>
+                        <div class="author-name">Mrs. Adeyemi</div>
+                        <div class="author-location">Bodija, Ibadan</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card reveal d1">
+                <div class="quote-mark">"</div>
+                <div class="stars">
+                    <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <p class="testimonial-text">
+                    Ordering on WhatsApp is very easy. I just send my list and they sort
+                    everything fast. It saves me a lot of stress.
+                </p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">
+                         <img src="customer-2.jpg" alt="Tunde Bakare"> 
+                    </div>
+                    <div>
+                        <div class="author-name">Tunde Bakare</div>
+                        <div class="author-location">Akobo, Ibadan</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ================================
+     BOTTOM CTA
+================================ -->
+<section class="bottom-cta">
+    <svg class="cta-wave" viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,60 C240,120 480,0 720,60 C960,120 1200,0 1440,60 L1440,120 L0,120 Z" fill="white"/>
+        <path d="M0,80 C240,20 480,100 720,60 C960,20 1200,100 1440,60" fill="none" stroke="white" stroke-width="2"/>
+    </svg>
+    <div class="container cta-inner">
+        <h2 class="cta-title reveal">Order your essentials in minutes on WhatsApp</h2>
+        <p class="cta-sub reveal d1">
+            Join thousands of families in Ibadan who trust Afolake for their
+            daily health and household needs.
+        </p>
+        <a href="https://wa.me/2348076172767?text=Hi%20Afolake%20Enterprises%2C%20I%20want%20to%20place%20an%20order" class="cta-btn reveal d2" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M5.077 20.556l-.264-1.39a14.9 14.9 0 01-1.969-7.463C2.844 4.916 7.76 0 13.813 0c2.943 0 5.707 1.147 7.787 3.229a10.934 10.934 0 013.22 7.786c-.003 6.054-4.921 10.971-10.972 10.971a10.963 10.963 0 01-5.233-1.327l-3.538.897zm3.832-2.215l.333.198a9.108 9.108 0 004.57 1.225c5.024 0 9.11-4.085 9.112-9.112a9.09 9.09 0 00-2.674-6.465 9.087 9.087 0 00-6.441-2.669c-5.028 0-9.114 4.085-9.116 9.11a9.124 9.124 0 001.39 4.859l.215.343-.914 3.337 3.525-.826z" fill-rule="evenodd"/></svg>
+            Place Your Order via WhatsApp
+        </a>
+    </div>
+</section>
+
+
+<!-- ================================
+     FOOTER
+================================ -->
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+
+            <!-- Column 1: About -->
+            <div>
+                <div class="footer-logo-name">Afolake</div>
+                <div class="footer-logo-sub">Medicine Store & Supermarket</div>
+                <p class="footer-desc">
+                    Afolake Medicine Stores and Supermarket Enterprises is your trusted
+                    neighborhood store in Ibadan, providing quality groceries, household
+                    items, and genuine medicines at affordable prices. We're committed to
+                    making your everyday shopping easy and reliable.
+                </p>
+                <div class="footer-socials">
+                    <!-- WhatsApp -->
+                    <a href="https://wa.me/2348076172767?text=Hi%20Afolake%20Enterprises%2C%20I%20want%20to%20place%20an%20order" target="_blank" class="social-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M5.077 20.556l-.264-1.39a14.9 14.9 0 01-1.969-7.463C2.844 4.916 7.76 0 13.813 0c2.943 0 5.707 1.147 7.787 3.229a10.934 10.934 0 013.22 7.786c-.003 6.054-4.921 10.971-10.972 10.971a10.963 10.963 0 01-5.233-1.327l-3.538.897zm3.832-2.215l.333.198a9.108 9.108 0 004.57 1.225c5.024 0 9.11-4.085 9.112-9.112a9.09 9.09 0 00-2.674-6.465 9.087 9.087 0 00-6.441-2.669c-5.028 0-9.114 4.085-9.116 9.11a9.124 9.124 0 001.39 4.859l.215.343-.914 3.337 3.525-.826z" fill-rule="evenodd"/></svg>
+                    </a>
+                    <!-- Instagram — REPLACE # with real Instagram link -->
+                    <a href="#" target="_blank" class="social-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    </a>
+                    <!-- Facebook — REPLACE # with real Facebook link -->
+                    <a href="#" target="_blank" class="social-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Column 2: Quick Links -->
+            <div>
+                <div class="footer-heading">Quick Links</div>
+                <div class="footer-links">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Visit Store</a>
+                    <a href="https://wa.me/2348076172767?text=Hi%20Afolake%20Enterprises%2C%20I%20want%20to%20place%20an%20order" target="_blank">Order on WhatsApp</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+
+            <!-- Column 3: Locations -->
+            <div>
+                <div class="footer-heading">Our Locations</div>
+                <div class="footer-contact-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+                    <span>
+                        No 1 Lane 4, Akapaijio Road,<br/>
+                        Oloisa Zone 2, Ibadan, Oyo State
+                    </span>
+                </div>
+            </div>
+
+            <!-- Column 4: Contact -->
+            <div>
+                <div class="footer-heading">Contact Care</div>
+                <div class="footer-contact-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+                    <span>+234 807 617 2767</span>
+                </div>
+                <div class="footer-contact-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg>
+                    <span>care@afolake.com.ng</span>
+                </div>
+                <div class="store-hours">
+                    <div class="hours-label">Store Hours</div>
+                    <div class="hours-text">
+                        Mon – Sat: 8:30 AM – 5:00 PM<br/>
+                        Sun: 12:00 PM – 8:30 PM
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer-bottom">
+            © 2025 Afolake Medicine Stores & Supermarket. Precision in care, warmth in service.
+        </div>
+    </div>
+</footer>
+
+
+<!-- ================================
+     FLOATING WHATSAPP BUTTON
+================================ -->
+<a href="https://wa.me/2348076172767?text=Hi%20Afolake%20Enterprises%2C%20I%20want%20to%20place%20an%20order"
+   class="wa-float" target="_blank" aria-label="Chat on WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="28" height="28">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+        <path d="M5.077 20.556l-.264-1.39a14.9 14.9 0 01-1.969-7.463C2.844 4.916 7.76 0 13.813 0c2.943 0 5.707 1.147 7.787 3.229a10.934 10.934 0 013.22 7.786c-.003 6.054-4.921 10.971-10.972 10.971a10.963 10.963 0 01-5.233-1.327l-3.538.897zm3.832-2.215l.333.198a9.108 9.108 0 004.57 1.225c5.024 0 9.11-4.085 9.112-9.112a9.09 9.09 0 00-2.674-6.465 9.087 9.087 0 00-6.441-2.669c-5.028 0-9.114 4.085-9.116 9.11a9.124 9.124 0 001.39 4.859l.215.343-.914 3.337 3.525-.826z" fill-rule="evenodd"/>
+    </svg>
+    <span class="wa-float-tooltip">Order on WhatsApp</span>
+</a>
+
+<!-- BACK TO TOP -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="white" width="20" height="20">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5"/>
+    </svg>
+</button>
+
+
+<!-- ================================
+     JAVASCRIPT
+================================ -->
+<script>
+    // Burger menu toggle
+    document.getElementById('burger').addEventListener('click', () => {
+        document.getElementById('mobileMenu').classList.toggle('open');
+    });
+    document.querySelectorAll('#mobileMenu a').forEach(l => {
+        l.addEventListener('click', () => {
+            document.getElementById('mobileMenu').classList.remove('open');
+        });
+    });
+
+    // Scroll reveal
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+            if (e.isIntersecting) e.target.classList.add('visible');
+        });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Back to top
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+        backToTop.classList.toggle('visible', window.scrollY > 400);
+    });
+    backToTop.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+</script>
+
+</body>
+</html>
