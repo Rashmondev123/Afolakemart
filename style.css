@@ -865,6 +865,31 @@ footer {
         grid-template-rows: auto;
         height: auto;
     }
+    .navbar-inner .btn-primary {
+    background: transparent;
+    color: var(--primary);
+    border: 1.5px solid var(--primary);
+    padding: 5px 10px;
+    font-size: 0.7rem;
+    box-shadow: none;
+    transition: background 0.2s, color 0.2s;
+}
+
+.navbar-inner .btn-primary:hover {
+    background: var(--primary);
+    color: white;
+}
+.cta-btn {
+    padding: 11px 20px;
+    font-size: 0.8rem;
+    gap: 7px;
+}
+
+.cta-btn svg {
+    width: 16px;
+    height: 16px;
+}
+    
     .cat-card:first-child { grid-row: auto; grid-column: 1 / 3; height: 260px; }
     .cat-card { height: 185px; }
     .deals-grid { grid-template-columns: repeat(2, 1fr); }
