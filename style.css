@@ -182,7 +182,7 @@ img { display: block; max-width: 100%; }
         rgba(0,0,0,0.82) 0%,
         rgba(0,0,0,0.55) 45%,
         rgba(0,0,0,0.18) 100%
-    ), url('hero-bg.jpg') center/cover no-repeat;
+    ), url('hero-b.jpg') center/cover no-repeat;
 }
 .hero-content {
     position: relative;
