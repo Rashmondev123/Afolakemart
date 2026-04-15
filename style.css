@@ -170,12 +170,12 @@ img { display: block; max-width: 100%; }
 .hero-bg {
    position: absolute;
     inset: 0;
-    background: linear-gradient(
-        105deg,
-        rgba(0,0,0,0.88) 0%,
-        rgba(0,0,0,0.72) 50%,
-        rgba(0,0,0,0.45) 100%
-    ), url('Hero-b.jpg') center/cover no-repeat;
+    background: radial-gradient(
+    ellipse at 30% 50%,
+    rgba(0,0,0,0.75) 0%,
+    rgba(0,0,0,0.55) 40%,
+    rgba(0,0,0,0.35) 100%
+), url('Hero-b.jpg') center/cover no-repeat;
 }
 
 .hero-content {
