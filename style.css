@@ -1,3 +1,4 @@
+
 /* ================================
    AFOLAKE MEDICINE STORE
    afolake.css
@@ -913,4 +914,173 @@ footer {
     .container { padding: 0 18px; }
     .wa-float { bottom: 20px; right: 20px; width: 52px; height: 52px; }
     .back-to-top { bottom: 82px; right: 24px; }
+}
+
+
+
+/* ---- DEALS TABS ---- */
+.deals-tabs {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+.deals-tab {
+    padding: 8px 18px;
+    font-family: var(--font-body);
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    background: white;
+    border: 1.5px solid var(--border);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
+    white-space: nowrap;
+}
+.deals-tab:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+.deals-tab.active {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+}
+
+/* ---- DEAL CATEGORY TAG ---- */
+.deal-category-tag {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(0,0,0,0.55);
+    color: white;
+    font-size: 0.6rem;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+/* ---- DEALS VIEW ALL LINK ---- */
+.deals-view-all {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.deals-view-all-link {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--accent);
+    border-bottom: 1.5px solid var(--accent);
+    padding-bottom: 2px;
+    transition: color 0.2s;
+}
+.deals-view-all-link:hover { color: var(--accent-light); }
+
+/* ---- CATEGORY PAGE HERO ---- */
+.cat-page-hero {
+    position: relative;
+    min-height: 280px;
+    display: flex;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+.cat-page-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,0.82) 0%,
+        rgba(0,0,0,0.45) 50%,
+        rgba(0,0,0,0.2) 100%
+    );
+}
+.cat-page-hero-content {
+    position: relative;
+    z-index: 1;
+    padding: 2.5rem 0;
+}
+.cat-back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 1rem;
+    transition: color 0.2s;
+}
+.cat-back-link:hover { color: white; }
+.cat-page-title {
+    font-family: var(--font-display);
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    font-weight: 800;
+    color: white;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+}
+.cat-page-sub {
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.78);
+    max-width: 480px;
+    line-height: 1.6;
+}
+
+/* ---- CATEGORY PAGE PRODUCTS SECTION ---- */
+.cat-page-products {
+    padding: 4rem 0 5rem;
+    background: var(--bg-light);
+}
+
+/* ---- CAT CARD SMALL VIEW ALL LINK ---- */
+.cat-link-sm {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: rgba(255,255,255,0.8);
+    display: block;
+    margin-top: 4px;
+    transition: color 0.2s;
+}
+.cat-link-sm:hover { color: white; }
+
+/* ---- RESPONSIVE: tabs on mobile ---- */
+@media (max-width: 600px) {
+    .deals-tabs {
+        gap: 0.4rem;
+    }
+    .deals-tab {
+        padding: 6px 14px;
+        font-size: 0.76rem;
+    }
+    .cat-page-hero {
+        min-height: 220px;
+    }
+}
+
+/* ---- LOAD MORE BUTTON ---- */
+.deals-load-more {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+}
+.btn-load-more {
+    padding: 12px 36px;
+    background: transparent;
+    color: var(--accent);
+    font-family: var(--font-body);
+    font-size: 0.88rem;
+    font-weight: 700;
+    border: 2px solid var(--accent);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    letter-spacing: 0.02em;
+}
+.btn-load-more:hover {
+    background: var(--accent);
+    color: white;
 }
